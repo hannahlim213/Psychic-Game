@@ -4,20 +4,72 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylsheet" type="text/css" href="assets/css/reset.css">
-    <link rel="sylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
     <script type="text/javascript" src="assets/javascript/game.js"></script>
-    <title>Word Guess Game</title>
+    <title>Psychic Game</title>
 </head>
 
 <body>
 
-    <h1>Instructions</h1>
-    <h2>Press a button from a-z to start playing!</h2>
+    <div class="container">
 
-    <h1>Score Board</h1>
-    <h2>Wins: </h2> <span id="wins">0</span>
-    <h2>Losses: </h2> <span id="losses">0</span>
+        <h1> The Psychic Game</h1>
+        <hr>
+        <h2>Instructions</h2>
+        <br>
+        <h5>Press a button from a-z to start guessing what letter the computer is thinking of</h5>
+
+        <br>
+        <div class="col-md-2">
+
+        </div>
+
+        <div class="col-md-8">
+            <table class="table">
+                <thead>
+                    <th id="score-board" colspan="2">Score Board</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Wins</th>
+                        <td>
+                            <span id="wins">0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Losses</th>
+                        <td>
+                            <span id="losses">0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Guesses Left</th>
+                        <td>
+                            <span id="guessLeft">10</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">User's Guesses</th>
+                        <td>
+                            <span id="userGuess"></span>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="col-md-2">
+            <img id="crystal-ball" src="assets/images/crystal-ball.jpg">
+        </div>
+
+    </div>
 
 </body>
 

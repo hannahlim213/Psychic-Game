@@ -2,10 +2,10 @@
 // Declare letters, starting Wins, Losses and Guesses left.
 
 var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x", "y", "z"];
-var winsDisplay = 0; //document.getElementById("wins").textContent;  //same as $("#wins")
-var lossesDisplay = 0; //document.getElementById("losses").textContent;
-var guessDisplay = 10; //document.getElementById("guessLeft").textContent;
-var userGuessDisplay = []; //document.getElementById("userGuess").textContent;
+var winsDisplay = 0; 
+var lossesDisplay = 0; 
+var guessDisplay = 10; 
+var userGuessDisplay = []; 
 
 // Declare letters user has clicked and the letter computer has chosen
 var computerGuess = letters[Math.floor(Math.random() * letters.length)];
@@ -36,18 +36,6 @@ function updateScore(chicken) {
 
 }
 
-// function updateUserGuessDisplay() {
-//     for (var i=0; i<letters.length; i++) {
-//         userGuessDisplay = letters[i];
-//         document.getElementById("userGuess").innerHTML = guessDisplay;
-//         //console.log(userGuessDisplay + guessDisplay)
-//     }
-// }
-
-// function updateGuessDisplay() {
-//     guessDisplay = GuessDisplay--;
-//     guessDisplay = document.getElementById("guessLeft").textContent;
-// }
 
 //================================================================
 
@@ -56,12 +44,7 @@ function updateScore(chicken) {
 // When user presses a key, go through this process
 document.onkeyup = function (event) {
 
-    // If the guessDisplay is more than 0, run functions
-    // if (guessDisplay<= 0) {
-    //     return;
-    // } 
-
-
+   
     // Determine which key was pressed, make it lowercase and set it to userGuessDisplay
     var userGuess = event.key.toLowerCase();
     // check if value is in arrary
@@ -74,10 +57,6 @@ document.onkeyup = function (event) {
         }
         
     }
-
-
-
-
 
         userGuessDisplay.push(userGuess)
         console.log(userGuessDisplay)
@@ -95,7 +74,6 @@ document.onkeyup = function (event) {
 
         }
        
-
     }
 
 

@@ -5,9 +5,9 @@ thead {
 
 #crystal-ball {
     position: fixed;
-    width: 303px;
-    right: 39px;
-    top: 221px
+    width: 360px;
+    right: 17px;
+    top: 199px;
 }
 
 body {
@@ -26,4 +26,10 @@ h1{
 h5{
     font-style: italic;
     font-size:14px;
+}
+
+@media only screen and (max-width: 835px) {
+    img{
+        visibility: hidden;
+    }
 }
